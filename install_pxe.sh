@@ -18,7 +18,7 @@ apt update && apt dist-upgrade
 # this is because Proxmox repository does not have any other arch besides amd64.
 # more info on multiarch on debian on: https://wiki.debian.org/Multiarch/HOWTO.
 
-apt install -y proxmox-ve postfix open-iscsi
+apt-get install -y proxmox-ve postfix open-iscsi
 apt remove os-prober
 # These steps are optional: if you want to remove the Debian kernel and only keep the Proxmox kernel.
 apt remove linux-image-amd64 linux-image-4.9.0-3-amd64
